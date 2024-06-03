@@ -1,1 +1,97 @@
 @charset "UTF-8";
+
+/* Possíveis cores
+#9F84BD - Purpureus
+#480355 - Violeta Russa
+#EEB1D5 - Rosa Lavanda
+#EFC7E5 - Caldo 
+
+*/
+
+
+:root {
+    --backgroud-color: #9F84BD;
+    --backgroud-color-2: #480355;
+    --backgroud-color-gradient: linear-gradient(var(--backgroud-color), var(--backgroud-color-2));
+    --backgroud-verde: #53AAA7;
+    --backgroud-verde-desfocado: #60c6c2d4;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--backgroud-color)
+}
+
+form {
+    width: 300px;
+    background-color: white;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 30px;
+}
+
+#camps {
+    padding: 5px;
+}
+
+#camps h1 {
+    text-align: center;
+}
+
+.camp {
+    background-color: var(--backgroud-color);
+    padding: 1px;
+    margin-top: 10px;
+    border-radius: 7px;
+}
+
+.camp label {
+    width: 10%;
+}
+
+.camp label span {
+    transform: translate(10%, 35%);
+}
+
+.camp input {
+    width: 90%;
+    height: 35px;
+    margin:2px 0px;
+    text-indent: 5px;
+    border-radius: 4px;
+    background-color: var(--backgroud-verde-desfocado);
+}
+
+.camp input, .posform {
+    font-size: 1.2em;
+}
+
+.posform {
+    display: block;
+    width: 100%;
+    margin: 5px 0px;
+    padding: 10px 0px;
+    border-radius: 7px;
+}
+
+#submit {
+    background-color: var(--backgroud-verde);
+    color: white;
+}
+
+#forgot {
+    background-color: transparent;
+    color: var(--backgroud-verde);
+    border: 2px solid var(--backgroud-verde);
+    margin-bottom: 30px;
+}

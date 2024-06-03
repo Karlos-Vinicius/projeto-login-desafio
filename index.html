@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Material Icons do Google -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
     <!-- Configurações para dispositivos móveis (celulares)-->
     <link rel="stylesheet" href="styles/style.css">
 
@@ -13,6 +16,49 @@
     <title>Log In</title>
 </head>
 <body>
-    <h1>Hello World!</h1>
+    <form action="#" autocomplete="on" method="post">
+        
+
+        <div id="camps">
+            <h1>Login</h1>
+            <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
+            <div class="camp">
+                <label for="iemail">
+                    <span class="material-symbols-outlined">
+                        person
+                    </span>
+                </label>
+                <input
+                    type="email"
+                    name="email"
+                    id="iemail"
+                    placeholder="Digite o seu email"
+                    autocomplete="email">
+            </div>
+            <div class="camp">
+                <label for="ipassword">
+                    <span class="material-symbols-outlined">
+                        lock
+                    </span>
+                </label>
+                <input
+                    type="password"
+                    name="password"
+                    id="ipassword"
+                    placeholder="Digite a sua senha"
+                    minlength="8">
+            </div>
+            <input 
+                class="posform" 
+                id="submit"
+                type="submit" 
+                value="Entrar">
+            <input 
+                class="posform" 
+                id="forgot" 
+                type="button" 
+                value="Esqueci a senha">
+        </div>
+    </form>
 </body>
 </html>
