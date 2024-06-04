@@ -10,7 +10,7 @@
 
 
 :root {
-    --backgroud-color: #9F84BD;
+    --backgroud-color: #5F2C82;
     --backgroud-color-2: #480355;
     --backgroud-color-gradient: linear-gradient(var(--backgroud-color), var(--backgroud-color-2));
     --backgroud-verde: #53AAA7;
@@ -23,7 +23,6 @@
     border: 0px;
 }
 
-
 body {
     width: 100vw;
     height: 100vh;
@@ -31,17 +30,32 @@ body {
 }
 
 form {
-    width: 300px;
-    background-color: white;
+    width: 250px;
     position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border-radius: 30px;
+}
+
+#img-movel1, #img-movel2{
+    width: 100%;
+    height: 200px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    background: black url("../images/background-form-login.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+#img-movel2 {
+    display: none;
 }
 
 #camps {
-    padding: 5px;
+    padding: 10px;
+    background-color: white;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    font: normal normal 0.9em Arial, Helvetica, sans-serif;
 }
 
 #camps h1 {
@@ -56,20 +70,26 @@ form {
 }
 
 .camp label {
-    width: 10%;
+    display: inline-block;
+    width: 15%;
 }
 
 .camp label span {
-    transform: translate(10%, 35%);
+    transform: translate(30%, 35%);
 }
 
 .camp input {
-    width: 90%;
+    display: inline-block;
+    width: 83%;
     height: 35px;
     margin:2px 0px;
     text-indent: 5px;
     border-radius: 4px;
     background-color: var(--backgroud-verde-desfocado);
+}
+
+.camp input:focus {
+    background-color: white;
 }
 
 .camp input, .posform {
@@ -80,7 +100,7 @@ form {
     display: block;
     width: 100%;
     margin: 5px 0px;
-    padding: 10px 0px;
+    padding: 12px 0px;
     border-radius: 7px;
 }
 
@@ -89,9 +109,17 @@ form {
     color: white;
 }
 
+#submit:hover {
+    background-color: #2D6462;
+}
+
 #forgot {
     background-color: transparent;
-    color: var(--backgroud-verde);
+    color: #2D6462;
     border: 2px solid var(--backgroud-verde);
     margin-bottom: 30px;
+}
+
+#forgot:hover {
+    background-color: #6CD3CF;
 }
