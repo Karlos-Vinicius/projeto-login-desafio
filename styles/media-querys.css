@@ -1,1 +1,54 @@
 @charset "UTF-8";
+
+/* 
+Pequenas: até 600px
+Celular: de 600px até 768px
+Tablet: de 768px até 992px
+PC: de 992px até 1200px
+TV: acima de 1200px
+
+*/
+
+@media screen and (min-width: 768px) {
+    #login {
+        width: 80%;
+    }
+
+    body, html {
+        background-image: linear-gradient(to top, #49a09d, #5f2c82);
+        background-repeat: no-repeat;
+    }
+
+    #img {
+        position: absolute;
+        float: left;
+        width: 30%;
+        height: 100%;
+    }
+
+    #form {
+        float: right;
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #login {
+        width: 950px;
+    }
+
+    body, html {
+        background-image: linear-gradient(to top, #49a09d, #5f2c82);
+        background-repeat: no-repeat;
+    }
+
+    #form {
+        width: 50%;
+        float: right;
+    }
+    
+    #img {
+        width: 50%;
+        float: right;
+    }
+}
