@@ -16,62 +16,49 @@
     <title>Log In</title>
 </head>
 <body>
-    <form action="#" autocomplete="on" method="post">
-        <div id="img-movel1">
+    <main>
+        <section id="login">
 
-        </div>
 
-        <div id="camps">
-            <h1>Login</h1>
-            <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
-            <div class="camp">
-                <label for="iemail">
-                    <span class="material-symbols-outlined">
-                        person
-                    </span>
-                </label>
-                <input
-                    type="email"
-                    name="email"
-                    id="iemail"
-                    placeholder="Digite o seu email"
-                    autocomplete="email">
+            <div id="img"></div>
+
+
+            <div class="form">
+                <h1>Login</h1>
+                <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
+
+                <form action="action.php" method="post" autocomplete="on">
+                    <div class="entrada">
+                        <input
+                        type="text"
+                        name="name"
+                        id="iname"
+                        placeholder="Digite o seu email"
+                        autocomplete="email"
+                        required><br>
+                    </div>
+
+                    <div class="entrada">
+                        <input
+                        type="password"
+                        name="password"
+                        id="ipassword"
+                        placeholder="Digite a sua senha"
+                        minlength="8"
+                        required><br>
+                    </div>
+
+                    <input id="enviar" type="submit" value="Entrar">
+                </form>
+
+                <button id="esqueceu" type="button">Esqueceu a senha?</button>
+
+
             </div>
-            <div class="camp">
-                <label for="ipassword">
-                    <span class="material-symbols-outlined">
-                        lock
-                    </span>
-                </label>
-                <input
-                    type="password"
-                    name="password"
-                    id="ipassword"
-                    placeholder="Digite a sua senha"
-                    minlength="8">
-            </div>
-            <input 
-                class="posform" 
-                id="submit"
-                type="submit" 
-                value="Entrar">
-            <button 
-                class="posform" 
-                id="forgot" 
-                type="button" 
-                value="Esqueci a senha">
 
-                Esqueci a senha 
-                <span class="material-symbols-outlined">
-                    mail
-                </span>
 
-            </button>
-        </div>
+        </section>
 
-        <div id="img-movel2">
-
-        </div>
-    </form>
+    </main>
 </body>
 </html>
