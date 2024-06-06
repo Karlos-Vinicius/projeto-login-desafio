@@ -38,7 +38,7 @@ body, html {
 
 #img {
     height: 200px;
-    background: url(../images/background-form-login.jpg) no-repeat;
+    background: url(../images/background-form-2.jpg) center bottom no-repeat;
     background-size: cover;
 }
 
@@ -75,7 +75,7 @@ body, html {
 }
 
 #enviar, #esqueceu {
-    
+    cursor: pointer;
     width: 100%;
     padding: 10px;
     border-radius: 7px;

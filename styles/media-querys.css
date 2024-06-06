@@ -50,5 +50,6 @@ TV: acima de 1200px
     #img {
         width: 50%;
         float: right;
+        background-position: center center;
     }
 }
