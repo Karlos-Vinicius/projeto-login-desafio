@@ -21,7 +21,7 @@ TV: acima de 1200px
 
     #img {
         position: absolute;
-        float: left;
+        float: right;
         width: 30%;
         height: 100%;
     }
@@ -43,13 +43,14 @@ TV: acima de 1200px
     }
 
     #form {
+        display: inline-block;
         width: 50%;
-        float: right;
     }
     
     #img {
         width: 50%;
-        float: right;
         background-position: center center;
+        height: 100%;
     }
+
 }

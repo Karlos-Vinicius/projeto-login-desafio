@@ -37,12 +37,14 @@ body, html {
 }
 
 #img {
+    display: block;
     height: 200px;
     background: url(../images/background-form-2.jpg) center bottom no-repeat;
     background-size: cover;
 }
 
 #form {
+    display: block;
     background-color: white;
     padding: 8px;
 }
