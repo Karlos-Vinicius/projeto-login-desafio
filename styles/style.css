@@ -60,20 +60,35 @@ body, html {
 
 .entrada {
     background-color: #5F2C82;
-    padding: 2px;
     margin-bottom: 4px;
     border-radius: 5px;
+    height: 35px;
+}
+
+.entrada label {
+    display: none;
+}
+
+.entrada span {
+    position: relative;
+    top: -1px;
+    font-size: 1.8em;
+    width: 35px;
+    padding: 5px;
 }
 
 #iemail, #ipassword {
-    width: 100%;
+    width: calc(100% - 40px);
     background-color: #94CFCD;
     border-radius: 5px;
     text-indent: 10px;
-    padding: 6px 0px;
+    padding: 7px 0px;
+
+    position: relative;
+    top: -11px;
 }
 
-#iemail:focus, #ipassword:focus {
+#iemail:focus-within, #ipassword:focus-within {
     background-color: white;
 }
 
@@ -103,4 +118,8 @@ body, html {
 
 #esqueceu:hover {
     background-color: #53aaa784;
+}
+
+#esqueceu span {
+    font-size: 1em;
 }
