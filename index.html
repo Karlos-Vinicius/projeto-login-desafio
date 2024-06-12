@@ -31,11 +31,16 @@
                     <div class="entrada">
                         <input
                         type="text"
-                        name="name"
-                        id="iname"
+                        name="email"
+                        id="iemail"
                         placeholder="Digite o seu email"
                         autocomplete="email"
                         required><br>
+                        <label for="iemail">
+                            <span class="material-symbols-outlined">
+                                person
+                            </span>
+                        </label>
                     </div>
 
                     <div class="entrada">
@@ -46,12 +51,22 @@
                         placeholder="Digite a sua senha"
                         minlength="8"
                         required><br>
+                        <label for="isenha">
+                            <span class="material-symbols-outlined">
+                                vpn_key
+                            </span>
+                        </label>
                     </div>
 
                     <input id="enviar" type="submit" value="Entrar">
                 </form>
 
-                <button id="esqueceu" type="button">Esqueceu a senha?</button>
+                <button id="esqueceu" type="button">
+                    Esqueceu a senha?
+                    <span class="material-symbols-outlined">
+                        mail
+                    </span>
+                </button>
 
 
             </div>

@@ -55,6 +55,7 @@ body, html {
 
 #form p {
     margin: 4px;
+    font-size: 0.8em;
 }
 
 .entrada {
@@ -64,7 +65,7 @@ body, html {
     border-radius: 5px;
 }
 
-#iname, #ipassword {
+#iemail, #ipassword {
     width: 100%;
     background-color: #94CFCD;
     border-radius: 5px;
@@ -72,7 +73,7 @@ body, html {
     padding: 6px 0px;
 }
 
-#iname:focus, #ipassword:focus {
+#iemail:focus, #ipassword:focus {
     background-color: white;
 }
 
